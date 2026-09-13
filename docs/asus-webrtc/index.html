@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Socket、WebSocket、非阻塞開發與系統可觀測性。">
+<meta name="color-scheme" content="light">
+<title>即時通訊與系統 · 蕭學鴻</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/print.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="toolbar">
+<a class="brand" href="../">蕭學鴻<span> / RESUME</span></a>
+<nav aria-label="履歷工具"><a href="resume.md" download="asus-webrtc.md">下載 Markdown</a><button type="button" data-print hidden>列印 / 存成 PDF</button></nav>
+</header>
+<main id="main" class="resume-shell">
+<div class="edition"><span>Realtime Systems</span><span>RESUME / 04</span></div>
+<article class="resume"><h1>蕭學鴻 Henry Hsiao</h1>
+<p><strong>資深後端工程師｜即時通訊・非阻塞開發・系統可觀測性</strong></p>
+<p>新北市 · <a href="mailto:henry255164@gmail.com">henry255164@gmail.com</a> · <a href="https://www.linkedin.com/in/henry255164">LinkedIn</a></p>
+<h2>專業摘要</h2>
+<p>具備高流量手機遊戲、Socket／WebSocket 與非阻塞程式設計經驗，擅長跨服務狀態管理、失敗恢復及系統除錯。具備 Go 專案維護、Java 17／Spring Boot API 開發、Kubernetes 維運與語音對話 POC 研究經驗，期望將既有即時互動與後端能力延伸至 WebRTC 雲端服務。</p>
+<h2>工作經歷</h2>
+<h3>ZeroLogix｜資深後端工程師</h3>
+<p>2023.07－至今</p>
+<ul>
+<li>主動改善 Kubernetes Pod 日誌保存，架設 Promtail 串接 Loki／Grafana，針對多日誌檔配置採集路徑及欄位解析，支援告警設定與問題排查。</li>
+<li>將跨服務長時間操作改為非同步工作流，加入 worker ownership、lease、checkpoint、重試與逾時恢復，以單元測試覆蓋競態、部分成功及過期操作。</li>
+<li>整合 MT4／MT5 帳戶建立與重試流程，將交易伺服器設定改由管理 API 提供並加入 Redis cache；補強遠端回應、authentication 與錯誤邊界，支援狀態診斷及只讀稽核。</li>
+<li>獨立交付跨 Session／JWT 的強制登出及閒置逾時功能，處理多分頁競爭與 iframe 同步；在 React／TypeScript 加入 origin／source guard 並以 Jest 驗證，另修正快速換頁造成的心跳中斷及誤登出。</li>
+<li>為 3 個後端、3 個前端專案容器化，整合 Terraform 與 GitLab CI/CD 部署至 Kubernetes；一鍵開發環境涵蓋多版本 PHP、Java、前端及 WebSocket 服務。</li>
+</ul>
+<h3>OwlTing Group 奧丁丁集團｜後端工程師</h3>
+<p>2023.05－2023.06</p>
+<ul>
+<li>在一個多月內學習 C#，協助新專案開發至上線，並支援 AWS 部署與 RabbitMQ 串接。</li>
+</ul>
+<h3>awoo 阿物科技｜後端工程師</h3>
+<p>2021.02－2023.02</p>
+<ul>
+<li>維護 Go 資料處理排程，開發 Laravel 高流量 API，維護 CodeIgniter 舊系統。</li>
+<li>透過監控與日誌調校資料庫效能，維運部分 Kubernetes／VM 環境，使用 GitLab 與 Argo CD 支援部署。</li>
+</ul>
+<h3>Gamesofa 慧邦科技｜後端工程師</h3>
+<p>2017.04－2020.05</p>
+<ul>
+<li>參與平均同時在線人數過萬的手機遊戲產品，使用 Perl Socket、PHP 與 Vue.js 開發即時互動功能。</li>
+<li>運用 WebSocket 與非阻塞程式設計，進行 MySQL 查詢優化及資料表正規化，兼顧效能與可讀性。</li>
+<li>開發遊戲內容、多國金流、圖表與統計分析功能。</li>
+</ul>
+<h3>晴天蕃茄資訊｜PHP 程式設計師</h3>
+<p>2015.01－2016.10</p>
+<ul>
+<li>開發會員、金流、地圖及語音串接功能，曾獨立負責政府單位資產管理系統後端。</li>
+</ul>
+<h2>技術分享、研究與開源</h2>
+<ul>
+<li><strong>COSCUP 講者</strong>：於開源人年會進行技術演講，分享 MySQL 底層優化概念。</li>
+<li><strong>Shuo 語音對話 POC</strong>：以小型概念驗證研究語音對話系統，作為延伸即時通訊領域的探索；屬研究經驗。</li>
+<li><strong>k9s</strong>：研究並提交 shell 執行問題修正，獲接受並於 v0.50.14 修正。</li>
+</ul>
+<h2>核心技能</h2>
+<ul>
+<li><strong>通訊與後端</strong>：Socket、WebSocket、非阻塞程式設計、非同步工作流、PHP、Perl、Java 17／Spring Boot、MySQL；Go、C# 專案經驗。</li>
+<li><strong>系統維運</strong>：Linux、Kubernetes、Docker、Terraform、RabbitMQ、Grafana、Loki、Promtail。</li>
+<li><strong>品質與整合</strong>：PHPUnit、JUnit、Jest、Playwright、重試與失敗恢復、Redis、跨服務 API。</li>
+</ul>
+<h2>學歷</h2>
+<p><strong>國立東華大學｜資訊管理學系學士</strong>，2009－2013。</p></article>
+</main>
+<footer class="footer">蕭學鴻 <span>·</span> 即時通訊與系統</footer>
+</body>
+</html>

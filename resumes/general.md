@@ -1,0 +1,73 @@
+# 蕭學鴻 Henry Hsiao
+
+**資深後端工程師｜後端開發・系統整合・雲端部署**
+
+新北市 · [henry255164@gmail.com](mailto:henry255164@gmail.com) · [LinkedIn](https://www.linkedin.com/in/henry255164)
+
+## 專業摘要
+
+具備金融科技、CRM、高流量 API 與手機遊戲開發經驗，主要使用 PHP／Laravel、Perl，亦有 Java 17／Spring Boot、Go 與 C# 專案經驗。工作涵蓋帳戶生命週期、支付與交易平台整合、跨服務認證及雲端部署。
+
+擅長在既有大型系統中釐清流程，以可恢復的非同步工作流、冪等設計及測試處理跨服務一致性；能沿著前端、API、資料庫與部署環境定位問題，獨立交付功能並與 QA、SRE 協作。
+
+曾擔任 COSCUP 講者，分享 MySQL 底層優化概念。
+
+## 工作經歷
+
+### ZeroLogix｜資深後端工程師
+
+2023.07－至今
+
+- 維護多個 PHP／Laravel 金融科技與 CRM 服務，涵蓋帳戶建立、代理推薦關係、獎勵規則、KYC 與入出金限制；整合 MT4／MT5、交易平台管理 API 及 Veriff，統一重試流程與錯誤邊界。
+- 開發 GateToPay API、維護 Binance 入金核對與 Worldpay 退款資料流程；於 Java 17／Spring Boot 帳戶管理服務實作交易識別碼 API，串接 controller、domain port、JPA repository 與 service test。
+- 獨立規劃並上線 Session／JWT 強制登出及閒置逾時功能，處理 token refresh、多分頁競爭與 iframe 同步；另串接 Keycloak OAuth、token 驗證及 scope／role 授權，設定 client、網域與跳轉 URL。
+- 入職半年內擔任組內 SaaS 轉型主要負責人，為 3 個後端、3 個前端專案容器化，整合 Terraform、GitLab CI/CD 與 Kubernetes 部署；建立並開源涵蓋 8 個 PHP 專案（3 種版本）、2 個 Java 專案及前端等服務的一鍵開發環境。
+- 優化 MySQL 慢查詢，改善 I/O wait、CPU 飆升及排程卡頓；協助 SRE 升級 MySQL、遷移 Amazon RDS，並改善 Pod 日誌採集，串接 Promtail、Loki 與 Grafana 支援告警。
+
+### OwlTing Group 奧丁丁集團｜後端工程師
+
+2023.05－2023.06
+
+- 在一個多月內學習 C#，協助新專案開發至上線，支援 AWS 部署與 RabbitMQ 串接。
+
+### awoo 阿物科技｜後端工程師
+
+2021.02－2023.02
+
+- 使用 Laravel 開發客戶串接的高流量 API，維護 CodeIgniter 舊系統及 Go 資料處理排程，依需求設計與串接資料庫。
+- 透過監控與日誌分析調校資料庫效能；使用 Docker Compose 建置本地環境，維運部分 Kubernetes／VM 服務，以 GitLab、Argo CD 支援部署。
+
+### Gamesofa 慧邦科技｜後端工程師
+
+2017.04－2020.05
+
+- 參與平均同時在線人數過萬的手機遊戲開發，使用 Perl、PHP、Vue.js，負責遊戲內容、多國金流、圖表及統計分析功能。
+- 優化 MySQL 查詢與資料表設計，運用 Socket、WebSocket 與非阻塞程式設計開發即時互動功能。
+
+### 晴天蕃茄資訊｜PHP 程式設計師
+
+2015.01－2016.10
+
+- 開發會員系統、金流、地圖及語音串接功能，曾獨立負責政府單位資產管理系統後端。
+
+## 代表性工程成果
+
+- **可恢復的跨服務工作流**：將代理與推薦關係的長時間操作改為具狀態管理的非同步流程，加入 worker ownership、lease、checkpoint、重試、冪等約束與逾時恢復；建立自動 reconciliation、HMAC 驗證、dry-run 與可續跑 backfill，並以單元測試覆蓋競態、部分成功及資料不一致。
+- **CRM 查詢與批次效能**：改為先按 ID 分頁再載入資料，以批次查詢與集合式處理消除 N+1 query；加入依 model type／scope 區分的 request-level cache，並以 `chunkById` 及僅選取必要 ID 降低大量更新的記憶體用量。
+- **跨前後端測試與驗證**：使用 PHPUnit、JUnit 與 Jest 補強功能及失敗路徑測試，以 Playwright 建立註冊、個人與企業 KYC 自動化流程；實作 iframe origin／source 檢查，並與 AI 協作透過 DevTools 發現及修正快速換頁造成的閒置誤登出。
+
+## 核心技能
+
+- **後端開發**：PHP、Laravel、Perl、CodeIgniter、Java 17／Spring Boot、REST API、Queue、非同步工作流；Go、C# 專案經驗。
+- **資料與整合**：MySQL、Redis、Elasticsearch、交易一致性、冪等設計、OAuth／Keycloak、JWT／Session、MT4／MT5、支付 API、RabbitMQ、Socket／WebSocket。
+- **品質與前端**：PHPUnit、JUnit、Jest、Playwright、Unit／Feature／E2E test、React、TypeScript、Vue.js。
+- **雲端與維運**：Linux、Docker、Kubernetes、Terraform、GCP／AWS、GitLab CI/CD、Argo CD、Grafana、Loki。
+
+## 技術分享與開源
+
+- **COSCUP 講者**：於開源人年會進行技術演講，分享 MySQL 底層優化概念。
+- **k9s 開源貢獻**：提交 shell 執行問題修正，獲接受並於 v0.50.14 修正。
+
+## 學歷
+
+**國立東華大學｜資訊管理學系學士**，2009－2013。
